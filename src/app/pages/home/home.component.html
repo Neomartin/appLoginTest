@@ -1,4 +1,27 @@
-<p>home works!</p>
-Hola desde el homeBussinesd
-dsadas
-dsadsad
+<div *ngIf="user" class="d-flex flex-column">
+  <h1 class="display-1 text-center my-5">
+    Bienvenido 
+    <span class="asante-user">
+        {{ user.username | titlecase }}
+    </span>
+  </h1>
+
+  <div class="lead text-center">
+    {{ date | amFromUnix | amLocale: "es" | amDateFormat: "dddd de MMMM de YYYY - HH:mm" | titlecase}}hs
+  </div>
+  <ul class="list-group list-group-flush mt-5">
+    <li class="list-group-item">
+      <span class="fw-bolder">Nombre:</span>
+
+
+      {{ user.name }} {{ user.surname }} </li>
+    <li class="list-group-item">
+      <span class="fw-bolder">Email:</span>
+      {{ user.email }}
+    </li>
+    <li class="list-group-item">
+      <span class="fw-bolder">Rol:</span>
+      {{ user.role.viewValue }}
+    </li>
+  </ul>
+</div>

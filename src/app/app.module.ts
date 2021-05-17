@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MomentModule } from 'ngx-moment';
 
 //Components
 import { AppComponent } from './app.component';
@@ -26,7 +28,10 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

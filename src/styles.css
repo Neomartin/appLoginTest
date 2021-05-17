@@ -7,3 +7,21 @@
     margin: 0;
     margin-top: -5px;
 }
+
+body {
+    min-height: 100vh;
+}
+
+ul > li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.asante-user {
+    background: #FF5D12;
+background: -webkit-linear-gradient(to right, #FF5D12 40%, #FCAD00 100%);
+background: -moz-linear-gradient(to right, #FF5D12 40%, #FCAD00 100%);
+background: linear-gradient(to right, #FF5D12 40%, #FCAD00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
